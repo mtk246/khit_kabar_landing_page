@@ -1,0 +1,58 @@
+:root {
+    --color-1: #F1680C;
+    --color-2: #e8e8e8;
+    --color-3: #6495ed;
+    --color-4: #f4f4f4;
+    --color-5: #fff;
+    --color-7: #666;
+}
+
+html, body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-1);
+}
+
+p {
+    color: var(--color-7);
+}
+
+.btn-1 {
+    color: var(--color-5);
+}
+
+.btn-1 {
+    background-color: var(--color-1) !important;
+}
+
+/*** Scale Start ***/
+
+.cat-btn:hover {
+    background-color: var(--color-4);
+}
+
+/*** Scale End ***/
+
+/*** Hover Colors ****/
+
+.btn-1:hover, .nav-link:hover {
+    color: #fff;
+    background-color: var(--color-3) !important;
+}
+
+/*** Hover Colors End ****/
+
+.nav-link {
+    color: var(--color-1) !important;
+}
+
+.nav-link:hover {
+    color: var(--color-5) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(241, 104, 12, 0.6);
+}

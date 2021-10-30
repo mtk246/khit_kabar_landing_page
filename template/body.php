@@ -1,6 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="assets/img/khitkabar.png" alt="khitkabar_logo" class="" width="80" /></a>
+        <a class="navbar-brand" href="#">
+            <?php if ($theme_check == 'light') { ?>
+                <img src="assets/img/khitkabar_logo_light.svg" alt="khitkabar_logo" class="" width="80" />
+            <?php
+            } ?>
+            <?php if ($theme_check == 'dark') { ?>
+                <img src="assets/img/khitkabar_logo_dark.svg" alt="khitkabar_logo" class="" width="80" />
+            <?php
+            } ?>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

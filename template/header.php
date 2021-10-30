@@ -1,3 +1,12 @@
+<?php
+@$theme_check = $_POST['theme'];
+$themeStyleSheet = 'assets/css/light.css';
+if ($theme_check == 'dark') {
+    $themeStyleSheet = 'assets/css/dark.css';
+}
+
+$themeToggle = ($themeStyleSheet == 'assets/css/dark.css') ? 'light' : 'dark';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -16,6 +25,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo $themeStyleSheet; ?>" type="text/css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
